@@ -66,18 +66,18 @@
   --sn-stylekit-accessory-tint-color-6: var(--c-mid-gray);
   --navigation-item-selected-background-color: var(--sn-stylekit-background-color);
   
-  /* Font variables with Android system monospace as priority fallback */
-  --sn-stylekit-sans-serif-font: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace;
-  --sn-stylekit-monospace-font: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace;
-  --sn-stylekit-editor-font-family: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace;
+  /* Font variables - just use 'monospace' keyword for maximum compatibility */
+  --sn-stylekit-sans-serif-font: monospace;
+  --sn-stylekit-monospace-font: monospace;
+  --sn-stylekit-editor-font-family: monospace;
+  --sn-stylekit-font-family: monospace;
 }
 
-/* Force monospace on EVERYTHING - with Android system fonts as fallback */
+/* Force monospace using the generic 'monospace' keyword which always works */
 * {
-  font-family: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace !important;
+  font-family: monospace !important;
 }
 
-/* Ensure all text elements use monospace */
 html,
 body,
 div,
@@ -94,5 +94,5 @@ label,
 .CodeMirror,
 code,
 pre {
-  font-family: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace !important;
+  font-family: monospace !important;
 }
