@@ -1,4 +1,4 @@
-/* Use Google Fonts - better mobile compatibility */
+/* Use Google Fonts for desktop, fallback to system monospace on mobile */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 :root {
@@ -66,15 +66,15 @@
   --sn-stylekit-accessory-tint-color-6: var(--c-mid-gray);
   --navigation-item-selected-background-color: var(--sn-stylekit-background-color);
   
-  /* JetBrains Mono font variables */
-  --sn-stylekit-sans-serif-font: 'JetBrains Mono', 'Courier New', monospace;
-  --sn-stylekit-monospace-font: 'JetBrains Mono', 'Courier New', monospace;
-  --sn-stylekit-editor-font-family: 'JetBrains Mono', 'Courier New', monospace;
+  /* Font variables with Android system monospace as priority fallback */
+  --sn-stylekit-sans-serif-font: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace;
+  --sn-stylekit-monospace-font: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace;
+  --sn-stylekit-editor-font-family: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace;
 }
 
-/* Force JetBrains Mono monospace on EVERYTHING */
+/* Force monospace on EVERYTHING - with Android system fonts as fallback */
 * {
-  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+  font-family: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace !important;
 }
 
 /* Ensure all text elements use monospace */
@@ -94,5 +94,5 @@ label,
 .CodeMirror,
 code,
 pre {
-  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+  font-family: 'JetBrains Mono', 'Droid Sans Mono', 'Roboto Mono', 'Courier New', monospace !important;
 }
