@@ -1,12 +1,19 @@
 {
+  "identifier": "com.osrobin.lights-out-theme",
   "name": "Lights Out",
-  "version": "1.2",
-  "main": "src/main.css",
-  "sn": {
-    "main": "src/main.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/PASSK3YS/lights-out.git"
+  "content_type": "SN|Theme",
+  "area": "themes",
+  "version": "1.2.0",
+  "description": "A dark theme for Standard Notes",
+
+  "url": "https://cdn.jsdelivr.net/gh/osrobin/dark-lights-out-standard-note-theme@main/src/main.css",
+  "download_url": "https://github.com/osrobin/dark-lights-out-standard-note-theme/archive/refs/heads/main.zip",
+  "latest_url": "https://cdn.jsdelivr.net/gh/osrobin/dark-lights-out-standard-note-theme@main/ext.json",
+
+  "dock_icon": {
+    "type": "circle",
+    "background_color": "#090909",
+    "foreground_color": "#737373",
+    "border_color": "#151515"
   }
 }
